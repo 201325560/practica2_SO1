@@ -1,4 +1,4 @@
-obj-m += memo_201325560.c
+obj-m += RAM.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules

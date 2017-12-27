@@ -16,7 +16,7 @@
 #include <linux/vmstat.h>
 #include <linux/atomic.h>
 
-#define FileProc "Memory_Stat"
+#define FileProc "memo"
 struct sysinfo i;
 
 
@@ -55,7 +55,7 @@ static int __init start_function(void)
 static void __exit clean_function(void)
 {
     remove_proc_entry(FileProc, NULL); 
-    printk(KERN_INFO "Sistemas Operativos 1.\n");
+    printk(KERN_INFO "201325560 .\n");
 }
  
 module_init(start_function);

@@ -46,16 +46,15 @@ static const struct file_operations Meminfo_fops = {
 
 static int __init start_function(void)
 {
-    printk(KERN_INFO "201325560 .\n");
     proc_create(FileProc, 0, NULL, &Meminfo_fops);
-    printk(KERN_INFO "Archivo Creado: /proc/%s.\n", FileProc);
+    printk(KERN_INFO "201325560 .\n");
     return 0;
 }
 
 static void __exit clean_function(void)
 {
     remove_proc_entry(FileProc, NULL); 
-    printk(KERN_INFO "201325560 .\n");
+    printk(KERN_INFO "Sistemas Operativos 1 .\n");
 }
  
 module_init(start_function);
